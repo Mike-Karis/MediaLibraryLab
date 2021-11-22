@@ -2,6 +2,7 @@
 using NLog.Web;
 using System.IO;
 using System.Collections;
+using System.Linq;
 
 namespace MediaLibrary
 {
@@ -23,6 +24,7 @@ namespace MediaLibrary
             {
                 Console.WriteLine("1) Read all movies from file.");
                 Console.WriteLine("2) Add movie to file.");
+                Console.WriteLine("3) Search for movie.");
                 Console.WriteLine("Enter any other key to exit.");
                 choice = Console.ReadLine();
                 if (choice == "1"){
@@ -100,7 +102,25 @@ namespace MediaLibrary
                             sw.WriteLine(final);
                         }
                 }
-            } while (choice == "1" || choice == "2");
+                else if(choice=="3"){
+                    // string scrubbedFile = FileScrubber.ScrubMovies("movies.csv");
+                    // logger.Info(scrubbedFile);
+                    // MovieFile movieFile = new MovieFile(scrubbedFile);
+                    Console.WriteLine("Enter movie title");
+                    string temp = Console.ReadLine();
+
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                    var titles = movieFile.Movies.Where(m => m.title.Contains(temp)).Select(m => m.title);
+
+                    Console.WriteLine($"There are {titles.Count()} movies with {temp} in the title:");
+                    foreach(string t in titles)
+                    {
+                        Console.WriteLine($"  {t}");
+                    }
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+            } while (choice == "1" || choice == "2"|| choice=="3");
 
            
 

@@ -58,3 +58,16 @@
 2021-10-25 10:37:22.9626|INFO|MediaLibrary.Program|movies.scrubbed.csv
 2021-10-25 10:37:23.0139|INFO|MediaLibrary.MovieFile|Movies in file 9126
 2021-10-25 10:39:44.9883|INFO|MediaLibrary.Program|Program ended
+2021-11-21 17:46:08.0960|INFO|MediaLibrary.Program|Program started
+2021-11-21 17:46:08.1855|INFO|MediaLibrary.FileScrubber|File already scrubbed
+2021-11-21 17:46:08.1987|INFO|MediaLibrary.Program|movies.scrubbed.csv
+2021-11-21 17:46:08.3536|INFO|MediaLibrary.MovieFile|Movies in file 9126
+2021-11-21 18:00:05.6893|INFO|MediaLibrary.Program|Program started
+2021-11-21 18:00:05.7486|INFO|MediaLibrary.FileScrubber|File already scrubbed
+2021-11-21 18:00:05.7486|INFO|MediaLibrary.Program|movies.scrubbed.csv
+2021-11-21 18:00:05.8033|INFO|MediaLibrary.MovieFile|Movies in file 9126
+2021-11-21 18:00:17.3836|INFO|MediaLibrary.Program|Program ended
+2021-11-21 18:02:02.0899|INFO|MediaLibrary.Program|Program started
+2021-11-21 18:02:02.1434|INFO|MediaLibrary.FileScrubber|File already scrubbed
+2021-11-21 18:02:02.1434|INFO|MediaLibrary.Program|movies.scrubbed.csv
+2021-11-21 18:02:02.1987|INFO|MediaLibrary.MovieFile|Movies in file 9126
